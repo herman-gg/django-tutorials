@@ -18,3 +18,15 @@ header h1 a {
 .post p {
     margin: 0;
 }
+
+body > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu > a {
+    padding: 5px 10px;
+    background-color: green;
+    color: #fff;
+}
