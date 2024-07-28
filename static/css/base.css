@@ -1,0 +1,20 @@
+html {
+    font-family: sans-serif;
+}
+
+header h1 a {
+    color: teal;
+    text-decoration: none;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post h2 {
+    font-size: 1.25rem;
+}
+
+.post p {
+    margin: 0;
+}
