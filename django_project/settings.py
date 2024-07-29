@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-xx-vaw@8h*+tds4%de6t^-qc)k92#u7s-)r(ir2ii&ud*s=3%q"
+SECRET_KEY = "django-insecure-j537f6^3=cpn$r_e!2iq0h2^(ri&10a@q624-wke99dp=nugpk"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "blog",
     "accounts"
 ]
 
@@ -56,7 +55,7 @@ ROOT_URLCONF = "django_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [ BASE_DIR / "templates" ],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -101,6 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
@@ -118,12 +118,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-LOGIN_REDIRECT_URL = "home"
-LOGOUT_REDIRECT_URL = "home"
